@@ -13,20 +13,8 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       jwt: {
-        expiresIn: "2h",
+        expiresIn: "1d",
       },
     },
   },
-  // email: {
-  //   config: {
-  //     provider: "sendgrid",
-  //     providerOptions: {
-  //       apiKey: env("SENDGRID_API_KEY"),
-  //     },
-  //     settings: {
-  //       defaultFrom: "stefan.bozic+sendgrid@quantox.com",
-  //       defaultReplyTo: "stefan.bozic+sendgrid@quantox.com",
-  //     },
-  //   },
-  // },
 });
