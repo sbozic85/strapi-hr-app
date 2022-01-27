@@ -17,4 +17,16 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  email: {
+    config: {
+      provider: "sendgrid",
+      providerOptions: {
+        apiKey: env("SENDGRID_API_KEY"),
+      },
+      settings: {
+        defaultFrom: "stefan.bozic+sendgrid@quantox.com",
+        defaultReplyTo: "stefan.bozic+sendgrid@quantox.com",
+      },
+    },
+  },
 });
